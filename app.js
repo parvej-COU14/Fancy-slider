@@ -38,6 +38,7 @@ const getImages = (query) => {
     .catch(err => console.log(err))
   
     toggleSpinner(false);
+  
 
 }
 
@@ -142,16 +143,6 @@ searchBtn.addEventListener('click', function () {
   getImages(search.value)
   sliders.length = 0;
 })
-
-
-
-// searchBtn.addEventListener('click', function () {
-//   document.querySelector('.main').style.display = 'none';
-//   clearInterval(timer);
-//   const search = document.getElementById('search');
-//   getImages(search.value)
-//   sliders.length = 0;
-// })
 
 sliderBtn.addEventListener('click', function () {
   createSlider()
